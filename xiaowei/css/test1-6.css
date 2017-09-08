@@ -1,6 +1,7 @@
 body{
     background-color: #222;
 }
+
 .container{
     margin: 0 auto;
     width: 980px;
@@ -14,6 +15,7 @@ body{
 .content__header,.content__figcaption,
 .content__text,.content__main{
     margin-bottom: 30px;
+    /*border: 1px solid red;*/
 }
 .content__header{
     border-bottom: 2px solid #938e8c;
@@ -32,8 +34,8 @@ body{
     padding-left: 4px;
 }
 .content__figcaption{
-    /*width: 100;*/
-    /*height:301px;*/
+    height:301px;
+    /*border: 1px solid red;*/
 }
 .figcaption__left{
     float: left;
@@ -50,5 +52,97 @@ body{
     height: 301px;
     width: 203px;
     border-top:2px solid #cc8091 ;
+}
 
+.content__text{
+    height: 160px;
+    /*border: 1px solid red;*/
+}
+
+.text__left,.text__middle,.text__right{
+    float: left;
+    width: 200px;
+    margin-right: 30px;
+    /*border: 1px solid red;*/
+}
+
+.text__left__title{
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #418c59;
+}
+.text__left__dec{
+    margin-top: 4px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #767777;
+    line-height: 16px;
+}
+.text__middle__title{
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #d2994f;
+}
+.text__middle__dec{
+    margin-top: 4px;
+    font-size: 12px;
+    color: #231815;
+    line-height: 16px;
+    opacity: 0.7;
+}
+.text__right__title{
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #cc7680;
+}
+.text__right__dec{
+    margin-top: 4px;
+    font-size: 12px;
+    color: #231815;
+    line-height: 20px;
+    opacity: 0.7;
+}
+.bot__num{
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 16px;
+    color: #cd4a48;
+    opacity: 0.7;
+}
+.main__left{
+    float: left;
+    width: 415px;
+    border: 1px solid red;
+}
+.main__right{
+    float: right;
+    width: 458px;
+    border: 1px solid red;
+}
+.main__left__title{
+    padding-bottom: 10px;
+    border-bottom:2px solid #11456b;
+}
+.main__left__title__oth{
+    font-size: 42px;
+    font-weight: bolder;
+    color: #11456b;
+    line-height: 42px;
+    font-family: 黑体;
+}
+.main__left__title__oth>span{
+    font-size: 72px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #f5e327;
+}
+.main__left__title__oth1{
+    font-size: 33px;
+    font-weight: bolder;
+    color: #11456b;
+    font-family: 黑体;
 }
