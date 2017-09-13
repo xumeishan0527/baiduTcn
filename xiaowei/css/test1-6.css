@@ -77,11 +77,17 @@ body{
     border-top:2px solid #cc8091;
 }
 .figcaption__right__title1{
-    font: 24px/40px 微软雅黑;
+    display: inline-block;
+    border-bottom: 2px solid gray;
+    font: 18px/18px 微软雅黑;
     color: #000;
-    text-decoration: underline;
+    margin: 10px 10px 0 0;
+}
+.figcaption__right__title1-lg{
+    font-size: 24px;
 }
 .figcaption__right__title2{
+    margin-top: 6px;
     font: 12px/10px 楷体;
     color: #676767;
 }
@@ -318,11 +324,25 @@ body{
     width: 200px;
     height: 160px;
     padding-top:40px;
+    padding-left: 16px;
     font: italic 14px/16px 黑体;
     color: #5a5b5b;
+    text-align: left;
+    text-indent: 3em;
 }
 .foot__leader-left,
 .foot__leader-right{
-    font: normal 72px/20px 黑体;
+    font: normal 72px/1px 黑体;
+    width: 42px;
     color: #d45d5c;
+}
+.foot__leader-left{
+    position: absolute;
+    left: -60px;
+    top: 60px;
+}
+.foot__leader-right{
+    position: absolute;
+    left: 100px;
+    top: 120px;
 }
