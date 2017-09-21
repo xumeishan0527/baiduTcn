@@ -10,7 +10,6 @@ body{
 .header{
     position: relative;
     height: 56px;
-    /*border: 1px solid red;*/
 }
 .header__icon{
     vertical-align: text-bottom;
@@ -198,15 +197,8 @@ li:first-child .header__nav__link{
     outline: 0;
 }
 .search__form__input>option{
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top:0;*/
-    /*margin: 0;*/
-    /*height: 34px;*/
-    /*width:100%;*/
     padding-left: 10px;
     background-color: #ccc;
-
 }
 .search__form>img{
     position: absolute;
@@ -241,7 +233,6 @@ li:first-child .header__nav__link{
     position: absolute;
     top:0;
     left:0;
-    /*border: 1px solid red;*/
 }
 .service__img__title{
     position: absolute;
@@ -279,7 +270,6 @@ li:first-child .header__nav__link{
     position: absolute;
     top:0;
     right:0;
-    /*border: 1px solid red;*/
     width: 430px;
     height: 100%;
 }
@@ -302,7 +292,6 @@ li:first-child .header__nav__link{
     width:300px;
     font:bolder 12px/30px SimSun;
     color: #AAAAAA;
-    /*border: 1px solid red;*/
 }
 .service__text__btn{
     position: absolute;
@@ -399,7 +388,6 @@ li:first-child .header__nav__link{
     padding-top: 10%;/****好呀好呀好呀*****/
     font:21px/30px SimHei;
     text-align: center;
-    /*border: 1px solid green;*/
 }
 .joinus__bar{
     width: 40px;
@@ -416,7 +404,6 @@ li:first-child .header__nav__link{
 .joinus__form{
     margin: 140px 120px 0 120px;
     height: auto;
-    /*border: 1px solid red;*/
 }
 .joinus__form__left{
     float: left;
@@ -553,4 +540,3 @@ li:first-child .header__nav__link{
     font: 12px/12px 微软雅黑;
     color: #bbb;
 }
-

@@ -101,7 +101,6 @@ h1, ul{
 .form__item{
     margin-bottom: 2px;
     font-size: 10px;
-    vertical-align: middle;
 }
 .form__item__label{
     float: left;

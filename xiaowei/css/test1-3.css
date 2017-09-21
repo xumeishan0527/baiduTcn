@@ -3,57 +3,52 @@
 .container__right{
     border: 1px solid rgba(147, 147, 81, 0.68);
 }
-
 .container{
+    position: relative;
     margin: 2%;
     height: 500px;
     border: 1.5px solid rgba(37, 74, 86, 0.68);
 }
-
 .container__left{
-    float: left;
+    position: absolute;
+    left: 20px;
+    top:20px;
     width: 200px;
     height: 200px;
-    margin:20px;
 }
-
 .container__left__logo{
     display: block;
     margin: 10% auto ;
     width: 50%;
     height: 50%;
 }
-
 .container__left__title{
     text-align: center;
     font-size: 24px;
 }
-
 .container__content{
-    float: left;
-    height: 450px;
+    position: absolute;
+    left: 240px;
+    top:20px;
+    height: 460px;
     width: calc(100% - 440px) ;
-    margin-top: 20px;
 }
-
 .container__content__title{
     margin-left: 20px;
     font-size: 24px;
     color: #333333;
 }
-
 .container__content__text{
     margin:0 20px 14px;
     line-height: 24px;
 }
-
 .container__right{
-    float: right;
+    position: absolute;
+    right: 20px;
+    top:20px;
     width: 160px;
-    height: 450px;
-    margin: 20px;
+    height: 460px;
 }
-
 .container__right__img{
     display: block;
     width: 100px;
@@ -61,33 +56,30 @@
     margin: 10px 30px;
 }
 
-
 /*.container{*/
-    /*position: relative;*/
-    /*margin: 2%;*/
-    /*height: 500px;*/
-    /*border: 1.5px solid rgba(37, 74, 86, 0.68);*/
+/*margin: 2%;*/
+/*height: 500px;*/
+/*border: 1.5px solid rgba(37, 74, 86, 0.68);*/
 /*}*/
 /*.container__left{*/
-    /*position: absolute;*/
-    /*left: 20px;*/
-    /*top:20px;*/
-    /*width: 200px;*/
-    /*height: 200px;*/
+/*float: left;*/
+/*width: 200px;*/
+/*height: 200px;*/
+/*margin:20px;*/
 /*}*/
-
 /*.container__content{*/
-    /*position: absolute;*/
-    /*left: 240px;*/
-    /*top:20px;*/
-    /*height: 400px;*/
-    /*width: calc(100% - 440px) ;*/
+/*float: left;*/
+/*height: 450px;*/
+/*width: calc(100% - 440px) ;*/
+/*margin-top: 20px;*/
+/*}*/
+/*.container__right{*/
+/*float: right;*/
+/*width: 160px;*/
+/*height: 450px;*/
+/*margin: 20px;*/
 /*}*/
 
-/*.container__right{*/
-    /*position: absolute;*/
-    /*right: 20px;*/
-    /*top:20px;*/
-    /*width: 160px;*/
-    /*height: 400px;*/
-/*}*/
+
+
+
