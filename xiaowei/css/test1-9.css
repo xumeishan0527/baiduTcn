@@ -1,0 +1,32 @@
+body{
+    background: #333;
+}
+.container{
+    max-width: 90%;
+    min-width: 60%;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 56px;
+    background: #2189bf;
+}
+.logo{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 50px;
+    margin: auto 0;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #2189bf;
+}
+.logo1{
+    margin: 18px 0 0 18px;
+    width: 18px;
+    height: 18px;
+    border-top:3px solid #2189bf;
+    border-left: 3px solid #2189bf;
+}
