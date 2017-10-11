@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*
+*页面总样式开始
+*/
+body{
+  background: #333;
+}
+//容器样式
+.container{
+  max-width: 90%;
+  min-width: 60%;
+  margin: 0 auto;
+}
+/*
+*页面总样式结束
+*/
+
+//定义混合变量开始
+.positions(right,@m){
+  right: @m;
+}
+.positions(left,@m){
+  left: @m;
+}
+.positions(@_,@m){
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.bgColor(@c:#fff){
+  background: @c;
+}
+.border(@color:red){
+  border: 1px solid @color;
+}
+//定义混合变量结束
+
+/*
+*头部模块开始
+*/
+header{
+  position: relative;
+  width: 100%;
+  height: 56px;
+  .bgColor(#2189bf);
+
+  //左边logo样式
+  .logo{
+    .positions(left,50px);
+    width: 36px;
+    height: 36px;
+    .bgColor();
+    .border(#2189bf);
+  }
+  .logo1{
+    margin: 18px 0 0 18px;
+    width: 18px;
+    height: 18px;
+    border-top:3px solid #2189bf;
+    border-left: 3px solid #2189bf;
+  }
+  //搜索框样式
+  .search{
+    .positions(right,174px);
+    height: 26px;
+    width: 312px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .search__input{
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+  //登入样式
+  .login{
+    .positions(right,112px);
+    font: 12px "黑体";
+    color: #fff;
+  }
+  .login__logo{
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+}
+/*
+*头部模块结束
+*/

@@ -30,3 +30,31 @@ header{
     border-top:3px solid #2189bf;
     border-left: 3px solid #2189bf;
 }
+.search{
+    position: absolute;
+    right: 174px;
+    top:50%;
+    transform: translateY(-50%);
+    height: 26px;
+    width: 312px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.search__input{
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+.login{
+    position: absolute;
+    right: 112px;
+    top:50%;
+    transform: translateY(-50%);
+    font: 12px "黑体";
+    color: #fff;
+}
+.login__logo{
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
