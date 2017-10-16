@@ -34,6 +34,7 @@ body{
 .border(@color:red){
   border: 1px solid @color;
 }
+
 //定义混合变量结束
 
 /*
@@ -87,3 +88,112 @@ header{
 /*
 *头部模块结束
 */
+
+aside{
+  float: left;
+  height: 100vh;
+  width: 260px;
+  .bgColor(#2a2e3d);
+
+  .aside__personMg{
+    height: 94px;
+    font: 14px/94px "sans-serif";
+    color: #fff;
+    .circle{
+      float: left;
+      width: 58px;
+      height: 58px;
+      border-radius: 30px;
+      .border(#bababe);
+      margin: 18px 20px 18px 46px;
+    }
+    .circle-center{
+      width: 48px;
+      height: 48px;
+      border-radius: 30px;
+      .bgColor(#bababe);
+      margin: 4px auto 0;
+    }
+  }
+  .aside__nub{
+    display: flex;
+
+    div{
+      flex: 1;
+      font: 13px "sans-serif";
+      color: #6a7b8f;
+      padding-left: 36px;
+
+      &:first-child{
+        text-align: right;
+        padding: 0 36px 0 0;
+        border-right: 1px solid #4c596e;
+      }
+    }
+  }
+  .aside__part3{
+    .bgColor(#383d4e);
+    margin-top: 15px;
+
+    .aside-title1{
+      .aside__part4 .aside-title;
+      color: #ededef;
+    }
+    .aside-icon1{
+      .aside__part4 .aside-icon;
+    }
+    .aside-title1__items{
+      font: 12px "sans-serif";
+      color: #6e8095;
+      text-indent: 74px;
+      padding: 10px 0;
+      &:nth-child(2){
+        color: #fff;
+      }
+    }
+    .aside-icon2{
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .aside-title1__item{
+      text-indent: 114px;
+      padding: 10px 0 0;
+
+      &:last-child{
+        color: #6e8095;
+      }
+    }
+  }
+  .aside__part4{
+    .aside-title{
+      font: 12px "sans-serif";
+      color: #6e8095;
+      text-indent: 50px;
+      padding: 15px 0;
+    }
+    .aside-icon{
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+nav{
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 100%;
+  height: 30px;
+  .bgColor();
+  ul{
+    list-style: none;
+  }
+}
+section{
+  float: right;
+  position: relative;
+  height: 100vh;
+  width: ~"calc(100% - 260px)";
+  .bgColor(#ededec);
+}
