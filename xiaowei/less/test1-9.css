@@ -46,13 +46,13 @@ header .search {
   transform: translateY(-50%);
   height: 26px;
   width: 312px;
-  border-radius: 15px;
-  overflow: hidden;
 }
 header .search__input {
   border: 0;
   height: 100%;
   width: 100%;
+  padding-left: 40px;
+  border-radius: 15px;
 }
 header .login {
   right: 112px;
@@ -68,6 +68,9 @@ header .login__logo {
 }
 /*
 *头部模块结束
+*/
+/*
+*侧边栏模块开始
 */
 aside {
   float: left;
@@ -113,47 +116,58 @@ aside .aside__part3 {
   background: #383d4e;
   margin-top: 15px;
 }
-aside .aside__part3 .aside-title1 {
+aside .aside__part3 .aside-title {
   font: 12px "sans-serif";
   color: #6e8095;
   text-indent: 50px;
   padding: 15px 0;
+}
+aside .aside__part3 .aside-title:first-child {
   color: #ededef;
 }
-aside .aside__part3 .aside-icon1 {
+aside .aside__part3 .aside-icon {
   display: inline-block;
   margin-right: 10px;
 }
-aside .aside__part3 .aside-title1__items {
+aside .aside__part3 .aside-title__items {
   font: 12px "sans-serif";
   color: #6e8095;
   text-indent: 74px;
-  padding: 10px 0;
+  margin: 20px 0;
 }
-aside .aside__part3 .aside-title1__items:nth-child(2) {
+aside .aside__part3 .aside-title__items:nth-child(2) {
   color: #fff;
+}
+aside .aside__part3 .aside-title__items:last-child {
+  margin: 0;
 }
 aside .aside__part3 .aside-icon2 {
   display: inline-block;
   margin-right: 5px;
 }
-aside .aside__part3 .aside-title1__item {
+aside .aside__part3 .aside-title__item {
   text-indent: 114px;
   padding: 10px 0 0;
 }
-aside .aside__part3 .aside-title1__item:last-child {
+aside .aside__part3 .aside-title__item:last-child {
   color: #6e8095;
 }
-aside .aside__part4 .aside-title {
-  font: 12px "sans-serif";
-  color: #6e8095;
-  text-indent: 50px;
-  padding: 15px 0;
+/*
+*侧边栏模块结束
+*/
+section {
+  float: right;
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 260px);
+  background: #ededec;
 }
-aside .aside__part4 .aside-icon {
-  display: inline-block;
-  margin-right: 10px;
-}
+/*
+*主内容模块结束
+*/
+/*
+*导航模块开始
+*/
 nav {
   position: absolute;
   right: 0;
@@ -165,10 +179,24 @@ nav {
 nav ul {
   list-style: none;
 }
-section {
-  float: right;
-  position: relative;
-  height: 100vh;
-  width: calc(100% - 260px);
-  background: #ededec;
+nav .nav__list > li {
+  display: inline-block;
+  color: #aaaaaa;
+  font: 12px/30px "sans-serif";
 }
+nav .nav__list > li:first-child {
+  margin-left: 30px;
+}
+nav .nav__list > li:last-child {
+  font-weight: bolder;
+  color: #6898c2;
+}
+nav .nav__list__link {
+  margin-right: 8px;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+/*
+*导航模块结束
+*/
