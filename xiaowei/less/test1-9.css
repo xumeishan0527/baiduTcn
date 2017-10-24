@@ -113,7 +113,6 @@ aside .aside__nub div:first-child {
   border-right: 1px solid #4c596e;
 }
 aside .aside__part3 {
-  background: #383d4e;
   margin-top: 15px;
 }
 aside .aside__part3 .aside-title {
@@ -124,6 +123,7 @@ aside .aside__part3 .aside-title {
 }
 aside .aside__part3 .aside-title:first-child {
   color: #ededef;
+  background: #383d4e;
 }
 aside .aside__part3 .aside-icon {
   display: inline-block;
@@ -161,6 +161,261 @@ section {
   height: 100vh;
   width: calc(100% - 260px);
   background: #ededec;
+}
+section select,
+section input {
+  margin-left: 10px;
+  height: 24px;
+  font: inherit;
+  padding-left: 6px;
+  border: 1px solid #ccc;
+}
+section select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 70px;
+  background: url("../images/task9-11.png") right 6px top 50% no-repeat;
+}
+section input {
+  width: 120px;
+}
+section .searchMessage {
+  width: 889px;
+  height: 84px;
+  background: #fff;
+  margin: 50px auto 10px;
+  box-shadow: 0 0 0.2px #b4b4b4;
+}
+section .searchMessage__searchList {
+  display: inline-block;
+  vertical-align: top;
+  margin: 16px 30px ;
+  font: 8px "sans-serif";
+  color: #b0b0b0;
+}
+section .searchMessage__users {
+  position: relative;
+  width: 186px;
+  margin: 16px 30px 0 0;
+  display: inline-block;
+  vertical-align: top;
+  font: 8px "sans-serif";
+  color: #b0b0b0;
+  background: url("../images/task9-12.png") right top 42% no-repeat;
+}
+section .searchMessage__users select {
+  width: 120px;
+  margin-bottom: 6px;
+}
+section .searchMessage__users__change {
+  position: absolute;
+  top: 32%;
+  right: 2px;
+  color: #eee;
+  cursor: pointer;
+}
+section .searchMessage__inf {
+  display: inline-block;
+}
+section .searchMessage__date {
+  font: 8px "sans-serif";
+  margin: 16px 0 0;
+  color: #b0b0b0;
+}
+section .searchMessage__date span:first-child {
+  margin-right: 12px;
+}
+section .searchMessage__numPerson {
+  font: 8px "sans-serif";
+  margin: 16px 0 0;
+  color: #b0b0b0;
+  margin: 6px 0 0;
+}
+section .searchMessage__numPerson span:first-child {
+  margin-right: 12px;
+}
+section .search__btn {
+  background: #388ac1;
+  width: 50px;
+  height: 25px;
+  border: 0;
+  margin-left: 30px;
+  vertical-align: top;
+  margin-top: 29.5px;
+  font: 12px "sans-serif";
+  color: #fff;
+}
+section .history {
+  display: flex;
+  height: 62px;
+  width: 884px;
+  margin: 0 auto;
+}
+section .history__list {
+  flex: 1;
+  margin: 0 6px 0 0;
+  box-shadow: 0 0 0.5px #b4b4b4;
+  background: #fff;
+  cursor: pointer;
+}
+section .history__list:hover {
+  border-top: 2px solid #4388c8;
+}
+section .history__list:first-child,
+section .history__list:nth-child(8) {
+  flex: 0.3;
+}
+section .history__list:first-child img,
+section .history__list:nth-child(8) img {
+  display: block;
+  margin: 23px auto;
+  line-height: 62px;
+}
+section .history__list:first-child:hover,
+section .history__list:nth-child(8):hover {
+  border: 0;
+}
+section .history__list:last-child {
+  margin: 0;
+  flex: 1.2;
+  font: 12px/62px "sans-serif";
+  color: #333;
+  text-indent: 64px;
+  background: url("../images/task9-15.png") 18px no-repeat #fff;
+}
+section .history__list:last-child:hover {
+  border: 0;
+}
+section .history__list__time {
+  height: 30px;
+  font: 12px/30px "serif";
+  text-align: center;
+}
+section .history__list__money {
+  font: 22px "serif";
+  text-align: center;
+  color: #ed7326;
+}
+section .history__list__money span {
+  font-size: 18px;
+  color: #acacab;
+}
+section .statisticsData {
+  width: 884px;
+  margin: 16px auto 0;
+  font: 12px/28px "sans-serif";
+}
+section .statisticsData__items {
+  display: flex;
+}
+section .statisticsData__item1 {
+  flex: 1;
+  height: 70px;
+  margin-right: 30px;
+  background: #fff;
+  border-left: 3px solid #43b29e;
+  font: 10px/24px "sans-serif";
+}
+section .statisticsData__item1:last-child {
+  margin: 0;
+}
+section .statisticsData__item1 .item1 {
+  float: left;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+section .statisticsData__item1 .item1 p:last-child {
+  color: #b7b7b7;
+}
+section .statisticsData__item1 .item2 {
+  float: left;
+  background: #43b29e;
+  margin-top: 12px;
+  margin-left: 64px;
+  width: 60px;
+  height: 48px;
+}
+section .statisticsData__item2 {
+  flex: 1;
+  height: 70px;
+  margin-right: 30px;
+  background: #fff;
+  border-left: 3px solid #388ac1;
+  font: 10px/24px "sans-serif";
+}
+section .statisticsData__item2:last-child {
+  margin: 0;
+}
+section .statisticsData__item2 .item1 {
+  float: left;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+section .statisticsData__item2 .item1 p:last-child {
+  color: #b7b7b7;
+}
+section .statisticsData__item2 .item2 {
+  float: left;
+  background: #388ac1;
+  margin-top: 12px;
+  margin-left: 64px;
+  width: 60px;
+  height: 48px;
+}
+section .statisticsData__item3 {
+  flex: 1;
+  height: 70px;
+  margin-right: 30px;
+  background: #fff;
+  border-left: 3px solid #d04a36;
+  font: 10px/24px "sans-serif";
+}
+section .statisticsData__item3:last-child {
+  margin: 0;
+}
+section .statisticsData__item3 .item1 {
+  float: left;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+section .statisticsData__item3 .item1 p:last-child {
+  color: #b7b7b7;
+}
+section .statisticsData__item3 .item2 {
+  float: left;
+  background: #d04a36;
+  margin-top: 12px;
+  margin-left: 64px;
+  width: 60px;
+  height: 48px;
+}
+section .statisticsData__item4 {
+  flex: 1;
+  height: 70px;
+  margin-right: 30px;
+  background: #fff;
+  border-left: 3px solid #e2cd46;
+  font: 10px/24px "sans-serif";
+}
+section .statisticsData__item4:last-child {
+  margin: 0;
+}
+section .statisticsData__item4 .item1 {
+  float: left;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+section .statisticsData__item4 .item1 p:last-child {
+  color: #b7b7b7;
+}
+section .statisticsData__item4 .item2 {
+  float: left;
+  background: #e2cd46;
+  margin-top: 12px;
+  margin-left: 64px;
+  width: 60px;
+  height: 48px;
 }
 /*
 *主内容模块结束

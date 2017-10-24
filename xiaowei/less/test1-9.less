@@ -34,7 +34,33 @@ body{
 .border(@color:red){
   border: 1px solid @color;
 }
-
+.statisticsData__item(@color){
+  flex: 1;
+  height: 70px;
+  margin-right: 30px;
+  .bgColor();
+  border-left: 3px solid @color;
+  font: 10px/24px "sans-serif";
+  &:last-child{
+    margin: 0;
+  }
+  .item1{
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+    p:last-child{
+      color: #b7b7b7;
+    }
+  }
+  .item2{
+    float: left;
+    .bgColor(@color);
+    margin-top: 12px;
+    margin-left: 64px;
+    width: 60px;
+    height:48px;
+  }
+}
 //定义混合变量结束
 
 /*
@@ -135,9 +161,7 @@ aside {
     }
   }
   .aside__part3 {
-    .bgColor(#383d4e);
     margin-top: 15px;
-
     .aside-title {
       font: 12px "sans-serif";
       color: #6e8095;
@@ -146,6 +170,7 @@ aside {
 
       &:first-child{
         color: #ededef;
+        .bgColor(#383d4e);
       }
     }
     .aside-icon {
@@ -190,7 +215,162 @@ section{
   height: 100vh;
   width: ~"calc(100% - 260px)";
   .bgColor(#ededec);
+
+  select,input{
+    margin-left: 10px;
+    height: 24px;
+    font: inherit;
+    padding-left: 6px;
+    .border(#ccc);
+  }
+  select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 70px;
+    background: url("../images/task9-11.png") right 6px top 50% no-repeat;
+  }
+  input{
+    width: 120px;
+  }
+  .searchMessage{
+    width: 889px;
+    height: 84px;
+    .bgColor();
+    margin: 50px auto 10px;
+    box-shadow: 0 0 0.2px rgb(180,180,180);
+  }
+  .searchMessage__searchList{
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px 30px ;
+    font: 8px "sans-serif";
+    color: #b0b0b0;
+  }
+  .searchMessage__users{
+    position: relative;
+    width: 186px;
+    margin: 16px 30px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    font: 8px "sans-serif";
+    color: #b0b0b0;
+    background: url("../images/task9-12.png") right top 42%  no-repeat;
+    select{
+      width: 120px;
+      margin-bottom: 6px;
+    }
+  }
+  .searchMessage__users__change{
+    position: absolute;
+    top: 32%;
+    right: 2px;
+    color: #eee;
+    cursor: pointer;
+  }
+  .searchMessage__inf{
+    display: inline-block;
+  }
+  .searchMessage__date{
+    font: 8px "sans-serif";
+    margin: 16px 0 0;
+    color: #b0b0b0;
+    span:first-child{
+      margin-right: 12px;
+    }
+  }
+  .searchMessage__numPerson{
+    .searchMessage__date;
+    margin: 6px 0 0;
+  }
+  .search__btn {
+    .bgColor(#388ac1);
+    width: 50px;
+    height:25px;
+    border: 0;
+    margin-left: 30px;
+    vertical-align: top;
+    margin-top:29.5px;
+    font: 12px "sans-serif";
+    color: #fff;
+  }
+
+  .history{
+    //.border();
+    display: flex;
+    height: 62px;
+    width: 884px;
+    margin: 0 auto;
+  }
+  .history__list{
+    flex: 1;
+    margin: 0 6px 0 0;
+    box-shadow: 0 0 0.5px rgb(180,180,180);
+    .bgColor();
+    cursor: pointer;
+    &:hover{
+      border-top:2px solid #4388c8;
+    }
+    &:first-child,&:nth-child(8){
+      flex: 0.3;
+      img{
+        display: block;
+        margin: 23px auto;
+        line-height:62px;
+      }
+      &:hover{
+        border: 0;
+      }
+    }
+    &:last-child{
+      margin: 0;
+      flex: 1.2;
+      font: 12px/62px "sans-serif";
+      color: #333;
+      text-indent: 64px;
+      background: url("../images/task9-15.png") 18px no-repeat #fff;
+      &:hover{
+        border: 0;
+      }
+    }
+  }
+  .history__list__time{
+    height: 30px;
+    font: 12px/30px "serif";
+    text-align: center;
+  }
+  .history__list__money{
+    font: 22px "serif";
+    text-align: center;
+    color: #ed7326;
+    span{
+      font-size: 18px;
+      color: #acacab;
+    }
+  }
+  .statisticsData{
+    width: 884px;
+    margin: 16px auto 0;
+    font: 12px/28px "sans-serif";
+  }
+  .statisticsData__items{
+    display: flex;
+  }
+
+  .statisticsData__item1{
+    .statisticsData__item(#43b29e);
+  }
+  .statisticsData__item2{
+    .statisticsData__item(#388ac1);
+  }
+  .statisticsData__item3{
+    .statisticsData__item(#d04a36);
+  }
+  .statisticsData__item4{
+    .statisticsData__item(#e2cd46);
+  }
 }
+
 /*
 *主内容模块结束
 */
