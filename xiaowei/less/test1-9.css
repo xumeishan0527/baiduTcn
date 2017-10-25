@@ -6,8 +6,7 @@ body {
   background: #333;
 }
 .container {
-  max-width: 90%;
-  min-width: 60%;
+  width: 1280px;
   margin: 0 auto;
 }
 /*
@@ -74,7 +73,7 @@ header .login__logo {
 */
 aside {
   float: left;
-  height: 100vh;
+  height: 1212px;
   width: 260px;
   background: #2a2e3d;
 }
@@ -158,7 +157,7 @@ aside .aside__part3 .aside-title__item:last-child {
 section {
   float: right;
   position: relative;
-  height: 100vh;
+  height: 1212px;
   width: calc(100% - 260px);
   background: #ededec;
 }
@@ -416,6 +415,269 @@ section .statisticsData__item4 .item2 {
   margin-left: 64px;
   width: 60px;
   height: 48px;
+}
+section .project {
+  display: flex;
+  width: 884px;
+  margin: 14px auto 0;
+}
+section .project__left {
+  box-shadow: 0 0 0.5px #b4b4b4;
+  border-radius: 10px;
+  flex: 1.5;
+  height: 355px;
+  background: #fff;
+  margin-right: 10px;
+}
+section .project__left__title {
+  height: 40px;
+  background: #f4f6f7;
+  -webkit-border-radius: 10px 10px 0 0 ;
+  -moz-border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0 ;
+  font: 12px/40px "sans-serif";
+  color: #b0b0b0;
+  text-indent: 20px;
+}
+section ul {
+  list-style: none;
+  margin: 10px 0 0 16px;
+}
+section li {
+  display: inline-block;
+  width: 84px;
+  height: 30px;
+  font: 12px/30px "sans-serif";
+  text-align: center;
+  background: #ededf0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+section li:first-child {
+  background: #fff;
+  border: 1px solid #ededf0;
+  border-bottom-width: 0;
+}
+section .project__left__table {
+  position: relative;
+  width: 490px;
+  height: 250px;
+  margin: 0 auto;
+  box-shadow: 0 0 0.5px #787878;
+  -webkit-border-radius: 0 4px 4px 4px ;
+  -moz-border-radius: 0 4px 4px 4px;
+  border-radius: 0 4px 4px 4px;
+}
+section .project__left__table table {
+  width: 402px;
+  height: 184px;
+  font: 14px/33px "sans-serif";
+  text-align: center;
+  position: absolute;
+  border-collapse: collapse;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .project__left__table td {
+  border: 1px solid #ededf0;
+  height: 33px;
+}
+section .project__left__table .tableActive {
+  background: #ededf0;
+}
+section .project__right {
+  box-shadow: 0 0 0.5px #b4b4b4;
+  flex: 1;
+  border-radius: 10px;
+  height: 355px;
+  background: #fff;
+}
+section .project__left__titleSub {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font: 12px "sans-serif";
+  text-indent: 14px;
+  border-bottom: 1px solid #f4f5f7;
+}
+section .project__left__titleSub p:first-child {
+  color: #b0b0b0;
+}
+section .project__left__inf {
+  width: 280px;
+  margin: 0 auto;
+  font: 12px "sans-serif";
+  padding-left: 14px;
+  border-bottom: 1px solid #f4f5f7;
+}
+section .project__left__inf__cost {
+  display: inline-block;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: calc((100% - 14px)*0.4);
+  border-right: 1px solid #f4f5f7;
+}
+section .project__left__inf__cost p:first-child {
+  color: #b0b0b0;
+}
+section .project__left__inf__name {
+  display: inline-block;
+  width: calc((100% - 14px)*0.6);
+}
+section .project__left__inf__name p:first-child {
+  color: #b0b0b0;
+}
+section .project__left__dec {
+  width: 280px;
+  margin: 0 auto;
+  font: 12px "sans-serif";
+  padding-left: 14px;
+  border-bottom: 1px solid #f4f5f7;
+  height: 130px;
+}
+section .project__left__dec p:first-child {
+  color: #b0b0b0;
+}
+section input {
+  width: 14px;
+  vertical-align: middle;
+  border: 0;
+  outline: 0;
+  margin-right: 8px;
+}
+section label {
+  display: inline-block;
+  font: 12px "sans-serif";
+  text-align: left;
+  margin-left: 26px;
+}
+section .project__right__btn {
+  background: #388ac1;
+  width: 50px;
+  height: 25px;
+  border: 0;
+  margin-left: 30px;
+  vertical-align: top;
+  margin-top: 29.5px;
+  font: 12px "sans-serif";
+  color: #fff;
+  margin-top: 6px;
+  margin-left: 130px;
+  border-radius: 2px;
+}
+section .data-time {
+  display: flex;
+  width: 884px;
+  margin: 14px auto 0;
+}
+section .data-time__left {
+  margin-right: 10px;
+  box-shadow: 0 0 0.5px #b4b4b4;
+  flex: 1;
+  border-radius: 10px;
+  height: 355px;
+  background: #fff;
+}
+section .data-time__left__chooseTime {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  padding: 8px 0;
+  font: 12px "sans-serif";
+}
+section .data-time__left__chooseTime select {
+  flex: 1;
+  margin: 0 4px 0 0;
+  width: 80px;
+}
+section .data-time__left__date {
+  width: 300px;
+  height: 260px;
+  margin: 0 auto;
+  font: 12px "sans-serif";
+}
+section .data-time__left__date td {
+  width: calc(100%/7);
+  text-align: center;
+}
+section .data {
+  height: 30px;
+  border-bottom: 2px solid #e1e1e2;
+  border-top: 2px solid #a9cfec;
+}
+section .activeRed {
+  color: red;
+}
+section .activeFocus {
+  border: 1px solid #f7d564;
+}
+section .chooseTime__btn {
+  flex: 1;
+  background: #388ac1;
+  width: 50px;
+  height: 25px;
+  border: 0;
+  margin-left: 30px;
+  vertical-align: top;
+  margin-top: 29.5px;
+  font: 12px "sans-serif";
+  color: #fff;
+  margin: 0;
+}
+section .data-time__right {
+  box-shadow: 0 0 0.5px #b4b4b4;
+  border-radius: 10px;
+  flex: 1.5;
+  height: 355px;
+  background: #fff;
+  margin-right: 10px;
+  margin: 0;
+}
+section .data-time__right__table {
+  border-collapse: collapse;
+  width: 440px;
+  height: 280px;
+  margin: 16px auto 0;
+  font: 13px "sans-serif";
+  text-align: center;
+}
+section .data-time__right__table .a {
+  display: inline-block;
+  position: relative;
+  margin-top: 6px;
+  margin-left: 14px;
+  vertical-align: top;
+  width: 140px;
+  height: 4px;
+  background: #c6c6c7;
+}
+section .data-time__right__table .b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100px;
+  background: red;
+}
+section .data-time__right__table td:first-child {
+  border: 1px solid #c6c6c7;
+  width: 70px;
+}
+section .data-time__right__table td:nth-child(2) {
+  border: 1px solid #c6c6c7;
+  width: 100px;
+}
+section .data-time__right__table td:last-child {
+  text-indent: 30px;
+  text-align: left;
+  border: 1px solid #c6c6c7;
+}
+section .data-time__right__table tr:hover {
+  background: #f3f5f6;
 }
 /*
 *主内容模块结束
