@@ -97,24 +97,24 @@
             </nav>
             <article class="searchMessage">
                 <div class="searchMessage__searchList">
-                    查询项
-                    <select>
-                        <option>第一项</option>
-                        <option>第二项</option>
+                    <label for="checkout">查询项</label>
+                    <select name="checkout" id="checkout">
+                        <option value="1">第一项</option>
+                        <option value="2">第二项</option>
                     </select>
                 </div>
 
                 <div class="searchMessage__users">
                     <div>
-                        买方
-                        <select>
+                        <label for="buyer">买方</label>
+                        <select name="buyer" id="buyer">
                             <option>小A</option>
                             <option>小B</option>
                         </select>
                     </div>
                     <div>
-                        卖方
-                        <select>
+                        <label for="seller">卖方</label>
+                        <select name="seller" id="seller">
                             <option>小C</option>
                             <option>小D</option>
                         </select>
@@ -122,14 +122,14 @@
                     <p class="searchMessage__users__change">换</p>
                 </div>
                 <div class="searchMessage__inf">
-                    <div class="searchMessage__date">
+                    <div class="searchMessage__inf__date">
                         <span>
-                            日期
-                            <input type="text" value="2016-04-01">
+                            <label for="date">日期</label>
+                            <input value="2016-04-01" name="date" id="date">
                         </span>
                         <span>
-                            总耗时
-                            <select>
+                            <label for="timeTaken">总耗时</label>
+                            <select id="timeTaken">
                                 <option>8天</option>
                                 <option>7天</option>
                             </select>
@@ -137,15 +137,15 @@
                     </div>
                     <div class="searchMessage__numPerson">
                         <span>
-                            人数
-                            <select>
+                            <label for="peopleNum">人数</label>
+                            <select id="peopleNum">
                                 <option>10人</option>
                                 <option>9人</option>
                             </select>
                         </span>
                         <span>
-                            成交项
-                            <input type="text" value="10项">
+                            <label for="bargain">成交项</label>
+                            <input value="10项" id="bargain">
                         </span>
                     </div>
                 </div>
@@ -221,35 +221,140 @@
             <article class="project">
                 <div class="project__left">
                     <p class="project__left__title">第一组项目</p>
-                    <ul>
-                        <li>项目一</li>
-                        <li>项目二</li>
-                        <li>项目三</li>
-                        <li>项目四</li>
-                        <li>项目五</li>
+                    <ul class="project__left__ul">
+                        <li class="project__left__ulLI">
+                            <input type="radio" name="project" checked="checked" class="liInput">
+                            <span>项目一</span>
+                            <div class="project__left__table">
+                                <table cellspacing="0">
+                                    <tr>
+                                        <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+
+                        <li class="project__left__ulLI">
+                            <input type="radio" name="project" class="liInput">
+                            <span>项目二</span>
+                            <div class="project__left__table table2">
+                                <table cellspacing="0">
+                                    <tr>
+                                        <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="project__left__ulLI">
+                            <input type="radio" name="project" class="liInput">
+                            <span>项目三</span>
+                            <div class="project__left__table table3">
+                                <table cellspacing="0">
+                                    <tr>
+                                        <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="project__left__ulLI">
+                            <input type="radio" name="project" class="liInput">
+                            <span>项目四</span>
+                            <div class="project__left__table table4">
+                                <table cellspacing="0">
+                                    <tr>
+                                        <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="project__left__ulLI">
+                            <input type="radio" name="project" class="liInput">
+                            <span>项目五</span>
+                            <div class="project__left__table table5">
+                                <table cellspacing="0">
+                                    <tr>
+                                        <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
                     </ul>
-                    <div class="project__left__table">
-                        <table cellspacing="0">
-                            <tr>
-                                <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
-                            </tr>
-                            <tr>
-                                <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
-                            </tr>
-                            <tr>
-                                <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
-                            </tr>
-                            <tr>
-                                <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
-                            </tr>
-                            <tr>
-                                <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
-                            </tr>
-                            <tr>
-                                <td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
-                            </tr>
-                        </table>
-                    </div>
+
                 </div>
                 <div class="project__right">
                     <p class="project__left__title">第二组项目</p>
@@ -271,7 +376,7 @@
                         <p>详细描述</p>
                         <p>该项目目前负责人是...</p>
                     </div>
-                    <label><input type="checkbox">遵守保密协议</label>
+                    <label for="input-checkbox" class="input-checkbox"><input type="checkbox" name="input-checkbox" id="input-checkbox">遵守保密协议</label>
                     <button class="project__right__btn">搜索</button>
 
                 </div>
@@ -294,19 +399,17 @@
                         </select>
                         <button class="chooseTime__btn">返回今天</button>
                     </div>
-                    <table class="data-time__left__date" cellspacing="0">
-                        <thead class="date">
+                    <table class="data-time__left__date">
+
                             <tr>
-                                <td class="data">一</td>
-                                <td  class="data">二</td>
-                                <td  class="data">三</td>
-                                <td  class="data">四</td>
-                                <td  class="data">五</td>
-                                <td  class="data">六</td>
-                                <td  class="data">日</td>
+                                <td>一</td>
+                                <td>二</td>
+                                <td>三</td>
+                                <td>四</td>
+                                <td>五</td>
+                                <td>六</td>
+                                <td>日</td>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -352,7 +455,7 @@
                                 <td><p class="activeRed">30</p><p>廿四</p></td>
                                 <td></td>
                             </tr>
-                        </tbody>
+
                     </table>
                 </div>
                 <div class="data-time__right">

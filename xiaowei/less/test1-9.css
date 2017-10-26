@@ -160,6 +160,20 @@ section {
   height: 1212px;
   width: calc(100% - 260px);
   background: #ededec;
+  /*搜索栏开始*/
+  /*搜索栏结束*/
+  /*历史查询模块开始*/
+  /*历史查询模块结束*/
+  /*数据统计模块开始*/
+  /*数据统计模块结束*/
+  /*第一组项目模块开始*/
+  /*第一组项目模块结束*/
+  /*第二组项目模块开始*/
+  /*第二组项目模块结束*/
+  /*日历模块开始*/
+  /*日历模块结束*/
+  /*汽车行业品牌榜模块开始*/
+  /*汽车行业品牌榜模块结束*/
 }
 section select,
 section input {
@@ -217,12 +231,12 @@ section .searchMessage__users__change {
 section .searchMessage__inf {
   display: inline-block;
 }
-section .searchMessage__date {
+section .searchMessage__inf__date {
   font: 8px "sans-serif";
   margin: 16px 0 0;
   color: #b0b0b0;
 }
-section .searchMessage__date span:first-child {
+section .searchMessage__inf__date span:first-child {
   margin-right: 12px;
 }
 section .searchMessage__numPerson {
@@ -259,6 +273,7 @@ section .history__list {
   cursor: pointer;
 }
 section .history__list:hover {
+  transition: all 0.2s ease-out;
   border-top: 2px solid #4388c8;
 }
 section .history__list:first-child,
@@ -439,35 +454,56 @@ section .project__left__title {
   color: #b0b0b0;
   text-indent: 20px;
 }
-section ul {
+section .project__left__ul {
   list-style: none;
   margin: 10px 0 0 16px;
 }
-section li {
+section .project__left__ulLI {
   display: inline-block;
-  width: 84px;
-  height: 30px;
+  position: relative;
+  width: 74px;
+  line-height: 30px;
   font: 12px/30px "sans-serif";
   text-align: center;
-  background: #ededf0;
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
 }
-section li:first-child {
+section .project__left__ulLI span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  z-index: 1;
+  background: #ededf0;
+}
+section .liInput {
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+section .liInput:checked + span {
   background: #fff;
-  border: 1px solid #ededf0;
-  border-bottom-width: 0;
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #fff;
+}
+section .liInput:checked + span + .project__left__table {
+  display: block;
 }
 section .project__left__table {
-  position: relative;
+  position: absolute;
   width: 490px;
   height: 250px;
-  margin: 0 auto;
-  box-shadow: 0 0 0.5px #787878;
+  top: 31px;
+  left: 0;
+  z-index: 0;
+  border: 1px solid #aaa;
   -webkit-border-radius: 0 4px 4px 4px ;
   -moz-border-radius: 0 4px 4px 4px;
   border-radius: 0 4px 4px 4px;
+  display: none;
 }
 section .project__left__table table {
   width: 402px;
@@ -486,6 +522,18 @@ section .project__left__table td {
 }
 section .project__left__table .tableActive {
   background: #ededf0;
+}
+section .table2 {
+  margin-left: -78px;
+}
+section .table3 {
+  margin-left: -157px;
+}
+section .table4 {
+  margin-left: -236px;
+}
+section .table5 {
+  margin-left: -315px;
 }
 section .project__right {
   box-shadow: 0 0 0.5px #b4b4b4;
@@ -542,18 +590,18 @@ section .project__left__dec {
 section .project__left__dec p:first-child {
   color: #b0b0b0;
 }
-section input {
+section .input-checkbox {
+  display: inline-block;
+  font: 12px "sans-serif";
+  text-align: left;
+  margin-left: 26px;
+}
+section .input-checkbox input {
   width: 14px;
   vertical-align: middle;
   border: 0;
   outline: 0;
   margin-right: 8px;
-}
-section label {
-  display: inline-block;
-  font: 12px "sans-serif";
-  text-align: left;
-  margin-left: 26px;
 }
 section .project__right__btn {
   background: #388ac1;
@@ -599,15 +647,16 @@ section .data-time__left__date {
   height: 260px;
   margin: 0 auto;
   font: 12px "sans-serif";
+  border-collapse: collapse;
+}
+section .data-time__left__date tr:nth-child(1) {
+  height: 30px;
+  border-bottom: 2px solid #e1e1e2;
+  border-top: 2px solid #a9cfec;
 }
 section .data-time__left__date td {
   width: calc(100%/7);
   text-align: center;
-}
-section .data {
-  height: 30px;
-  border-bottom: 2px solid #e1e1e2;
-  border-top: 2px solid #a9cfec;
 }
 section .activeRed {
   color: red;
