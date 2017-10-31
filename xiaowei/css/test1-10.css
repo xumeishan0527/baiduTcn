@@ -1,0 +1,39 @@
+
+@media (min-width: 641px) {
+    .container{
+        align-items: center;
+    }
+}
+@media (max-width: 640px){
+    .container{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .item4{
+        order: -1;
+    }
+}
+.container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 150px;
+    border: 1px solid #f00;
+    vertical-align: bottom;
+    margin-top: 10px;
+}
+.item1{
+    height:120px;
+}
+.item2{
+    height:100px;
+}
+.item3{
+    height: 40px;
+}
+.item4{
+    height:200px;
+    border: 1px solid #0f0;
+}
