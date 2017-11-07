@@ -7,7 +7,7 @@ header{
     font: 16px "sans-serif";
     color: #fff;
 }
-main{
+main,.module{
     border-bottom: 10px solid #eee;
 }
 .header__back{
@@ -26,7 +26,6 @@ main{
     width: 100%;
     height: 50px;
     display: flex;
-    /*background: #fff;*/
     font: 14px/50px "sans-serif";
     list-style: none;
     color: #333;
@@ -34,13 +33,11 @@ main{
 }
 .nav__ul li{
     flex: 1;
-    /*border: 1px solid red;*/
 }
 .main-img{
     width: 100%;
 }
 .main__tag{
-    /*height:90px;*/
     display: flex;
     margin: 0 10px;
     border-bottom: 1px solid #ccc;
@@ -74,7 +71,6 @@ main{
 .main__tab__list{
     flex: 1;
     margin: 10px 0;
-    /*border: 1px solid red;*/
 }
 .main__tab__list:nth-child(1),
 .main__tab__list:nth-child(2){
@@ -99,4 +95,58 @@ main{
 .module h4{
     line-height: 30px;
     border-bottom: 1px solid #ccc;
+}
+.module__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.module__list__img{
+    width: 100px;
+    height: 100px;
+}
+.module__list__item{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 110px;
+    height: 100px;
+    font: 18px/44px "sans-serif";
+    text-align: center;
+}
+.module__list__item p{
+    height: 44px;
+    background: #eee;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+}
+.new__img{
+    width: 110px;
+    height: 80px;
+}
+.new__text{
+    width: calc(100% - 130px);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.new__text p:first-child{
+    font: 18px "sans-serif";
+}
+.new__text p:last-child,
+.new1__dec{
+    font: 14px "sans-serif";
+    color: #999;
+}
+.new1{
+    padding: 10px;
+}
+.new1__img{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
