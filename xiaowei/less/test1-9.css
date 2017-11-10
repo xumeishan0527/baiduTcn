@@ -203,6 +203,7 @@ section .searchMessage {
 section .searchMessage__searchList {
   display: inline-block;
   vertical-align: top;
+  /*good*/
   margin: 16px 30px ;
   font: 8px "sans-serif";
   color: #b0b0b0;
@@ -212,7 +213,6 @@ section .searchMessage__users {
   width: 186px;
   margin: 16px 30px 0 0;
   display: inline-block;
-  vertical-align: top;
   font: 8px "sans-serif";
   color: #b0b0b0;
   background: url("../images/task9-12.png") right top 42% no-repeat;
