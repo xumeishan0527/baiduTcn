@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task4</title>
+    <style>
+        .ulOut{
+            list-style-type: none;
+            /*border: 1px solid green;*/
+            padding: 0;
+        }
+        .liOut{
+            display: inline-block;
+            margin-right: 4px;
+            width: 40px;
+            height:40px;
+            background: red;
+            font: 18px/40px "sans-serif";
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <input id=aqi-input>
+    <button id="left-in">左侧入</button>
+    <button id="right-in">右侧入</button>
+    <button id="left-out">左侧出</button>
+    <button id="right-out">右侧出</button>
+    <div id="container">
+
+    </div>
+
+    <script>
+        var leftIn=document.getElementById('left-in'),
+            leftOut=document.getElementById('left-out'),
+            rightIn=document.getElementById('right-in'),
+            rightOut=document.getElementById('right-out'),
+            input=document.getElementById('aqi-input'),
+            container=document.getElementById('container'),
+            ali=document.getElementsByTagName('li'),
+            data=[];
+        var newUL=document.createElement('ul');
+            newUL.className='ulOut';
+
+
+
+        function getValue() {
+            var per=input.value;
+            return per;
+        }
+
+        rightIn.onclick=function () {
+            var aqiValue=getValue();
+            data.push(aqiValue);
+            getrightNum(data);
+
+        };
+        leftIn.onclick=function () {
+            var aqiValue=getValue();
+            data.push(aqiValue);
+            getleftNum(data);
+
+        };
+        function getleftNum() {
+            render__ul();
+            newUL.insertBefore(newLi,ali[0]);
+            container.appendChild(newUL);
+        }
+        function getrightNum() {
+            render__ul();
+            newUL.append(newLi);
+            container.appendChild(newUL);
+        }
+        function render__ul() {
+            var newLi=document.createElement('li');
+            newLi.className='liOut';
+            newLi.textContent=data[data.length-1];
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
