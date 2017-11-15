@@ -70,25 +70,39 @@
             container.innerHTML='';
             var newUL=document.createElement('ul');
             newUL.className='ulOut';
-            console.log(data);
-
+            var newli='';
             for(var i=0;i<data.length;i++){
                 var item=data[i];
-                var newli=render_item(item,i);
-                newUL.append(newli);
-                container.appendChild(newUL);
+                var stringLi=render_item(item,i);
+                newli=newli+stringLi;
             }
+            newUL.innerHTML=newli;
+            container.appendChild(newUL);
+            delete__listen();
         }
 
         function render_item(data,number) {
-                var newLi=document.createElement('li');
-                newLi.className='liOut';
-                newLi.textContent=data;
-                return newLi;
+            var newLi__tpl='<li class="liOut" data-index="'+number+'">'+data+
+                      '</li>';
+                return newLi__tpl;
         }
 
+        /*难点*/
+        function delete__listen() {
+            var detNum=document.getElementsByTagName('li');
+            for(var i = 0; i < detNum.length; i++){
+                detNum[i].count=i;  /*good*/
+                detNum[i].onclick = function(){
+                    delete__item(this.count);
+                }
+            }
+        }
 
-
+        function delete__item(k) {
+            data.splice(k,1);
+            getNum(data);
+        }
+        /*难点结束*/
 
     </script>
 
