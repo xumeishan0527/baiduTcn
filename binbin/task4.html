@@ -38,47 +38,54 @@
             rightIn=document.getElementById('right-in'),
             rightOut=document.getElementById('right-out'),
             input=document.getElementById('aqi-input'),
-            container=document.getElementById('container'),
-            ali=document.getElementsByTagName('li'),
             data=[];
-        var newUL=document.createElement('ul');
-            newUL.className='ulOut';
-
-
 
         function getValue() {
             var per=input.value;
             return per;
         }
 
+        leftIn.onclick=function () {
+            var aqiValue=getValue();
+            data.unshift(aqiValue);
+            getNum(data);
+
+        };
         rightIn.onclick=function () {
             var aqiValue=getValue();
             data.push(aqiValue);
-            getrightNum(data);
-
+            getNum(data);
         };
-        leftIn.onclick=function () {
-            var aqiValue=getValue();
-            data.push(aqiValue);
-            getleftNum(data);
-
+        leftOut.onclick=function () {
+            data.shift();
+            getNum(data);
         };
-        function getleftNum() {
-            render__ul();
-            newUL.insertBefore(newLi,ali[0]);
-            container.appendChild(newUL);
-        }
-        function getrightNum() {
-            render__ul();
-            newUL.append(newLi);
-            container.appendChild(newUL);
-        }
-        function render__ul() {
-            var newLi=document.createElement('li');
-            newLi.className='liOut';
-            newLi.textContent=data[data.length-1];
+        rightOut.onclick=function () {
+            data.pop();
+            getNum(data);
+        };
+
+        function getNum() {
+            var container=document.getElementById('container');
+            container.innerHTML='';
+            var newUL=document.createElement('ul');
+            newUL.className='ulOut';
+            console.log(data);
+
+            for(var i=0;i<data.length;i++){
+                var item=data[i];
+                var newli=render_item(item,i);
+                newUL.append(newli);
+                container.appendChild(newUL);
+            }
         }
 
+        function render_item(data,number) {
+                var newLi=document.createElement('li');
+                newLi.className='liOut';
+                newLi.textContent=data;
+                return newLi;
+        }
 
 
 
