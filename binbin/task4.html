@@ -65,29 +65,24 @@
             getNum(data);
         };
 
+        /*渲染每个li*/
         function getNum() {
             var container=document.getElementById('container');
-            container.innerHTML='';
+            container.innerHTML='';/*good*/
             var newUL=document.createElement('ul');
             newUL.className='ulOut';
             var newli='';
             for(var i=0;i<data.length;i++){
-                var item=data[i];
-                var stringLi=render_item(item,i);
-                newli=newli+stringLi;
+                var newLi__tpl='<li class="liOut" data-index="'+i+'">'+data[i]+'</li>';
+                newli=newli+newLi__tpl;
             }
             newUL.innerHTML=newli;
             container.appendChild(newUL);
             delete__listen();
         }
 
-        function render_item(data,number) {
-            var newLi__tpl='<li class="liOut" data-index="'+number+'">'+data+
-                      '</li>';
-                return newLi__tpl;
-        }
-
-        /*难点*/
+        /*good*/
+        /*监听delete事件*/
         function delete__listen() {
             var detNum=document.getElementsByTagName('li');
             for(var i = 0; i < detNum.length; i++){
@@ -98,11 +93,12 @@
             }
         }
 
+        /*delete事件*/
         function delete__item(k) {
             data.splice(k,1);
             getNum(data);
         }
-        /*难点结束*/
+
 
     </script>
 
