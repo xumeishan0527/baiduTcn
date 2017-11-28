@@ -19,6 +19,10 @@
             color: #fff;
             text-align: center;
         }
+        button:nth-of-type(5){
+            margin-left: 20px;
+            width: 56px;
+        }
     </style>
 </head>
 <body>
@@ -28,6 +32,7 @@
 <button id="right-in">右侧入</button>
 <button id="left-out">左侧出</button>
 <button id="right-out">右侧出</button>
+<button id="sort">排序</button>
 <div id="container">
 
 </div>
@@ -38,6 +43,7 @@
         rightIn=document.getElementById('right-in'),
         rightOut=document.getElementById('right-out'),
         input=document.getElementById('aqi-input'),
+        sort=document.getElementById('sort'),
         data=[];
 
     function getValue() {
@@ -54,14 +60,24 @@
     leftIn.onclick=function () {
         var aqiValue=getValue();
         if (aqiValue===undefined)return;
-        data.unshift(aqiValue);
-        getNum(data);
+        if(data.length>=60){
+            alert('已到极限');
+        }
+        else {
+            data.unshift(aqiValue);
+            getNum(data);
+        }
     };
     rightIn.onclick=function () {
         var aqiValue=getValue();
         if (aqiValue===undefined)return;
-        data.unshift(aqiValue);
-        getNum(data);
+        if(data.length>=60){
+            alert('已到极限');
+        }
+        else {
+            data.push(aqiValue);
+            getNum(data);
+        }
     };
     leftOut.onclick=function () {
         data.shift();
@@ -72,6 +88,34 @@
         getNum(data);
     };
 
+    /*方法一*/
+//    sort.addEventListener('click',function () {
+//        //冒泡算法
+//        if(data.length<=1){
+//            getNum(data);
+//        }
+//        for(var i=0;i<data.length;i++){
+//            for (var j=0;j<data.length-i;j++){
+//                if (data[j]>data[j+1]){
+//                    var tmp=data[j];
+//                    data[j]=data[j+1];
+//                    data[j+1]=tmp;
+//                }
+//            }
+//        }
+//        getNum(data);
+//    });
+
+
+    /*方法二*/
+    sort.addEventListener('click',function () {
+        data.sort(sorting);
+        function sorting(a,b) {
+            return a-b
+        }
+        getNum(data);
+    });
+
     /*渲染每个li*/
     function getNum() {
         var container=document.getElementById('container');
@@ -79,7 +123,6 @@
         var newUL=document.createElement('ul');
         newUL.className='ulOut';
 
-        console.log(data);
         for(var i=0;i<data.length;i++){
             var newLi=document.createElement('li');
             newLi.setAttribute('class','liOut');
@@ -107,6 +150,8 @@
         data.splice(k,1);
         getNum(data);
     }
+
+
 
 
 </script>
