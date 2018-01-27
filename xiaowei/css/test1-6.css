@@ -1,18 +1,13 @@
-body{
-    background-color: #222;
-}
 /**********总容器大小***************/
 .container{
-    margin: 0 auto;
+    margin: 0 44px;
     width: 980px;
-    height: 1386px;
-    background-color: #fff;
 }
 /*内容大小*/
-.content{
-    margin: 0 44px;
-    height: 100%;
-}
+/*.content{*/
+    /*margin: 0 44px;*/
+    /*height: 100%;*/
+/*}*/
 
 .content__header,.content__figcaption,
 .content__text,.content__main{
@@ -27,7 +22,7 @@ body{
     height:61px;
     background-color: #841616;
 }
-.header__logo>a{
+.header__logo a{
     display: inline-block;
     font-size: 12px;
     text-decoration: none;

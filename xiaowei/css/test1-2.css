@@ -1,18 +1,21 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #cccccc;
 }
-h1, ul{
-    padding: 0 ;
+
+h1, ul {
+    padding: 0;
     margin: 0;
 }
-.nav, .footer{
+
+.nav, .footer {
     position: relative;
     height: 50px;
     background-color: #142d4c;
 }
-.nav__title{
+
+.nav__title {
     position: absolute;
     left: 2%;
     top: 50%;
@@ -22,117 +25,137 @@ h1, ul{
     line-height: 20px;
     color: #ccc;
 }
-.nav__list{
+
+.nav__list {
     position: absolute;
     right: 2%;
     top: 50%;
     transform: translateY(-50%);
 }
-.nav__list>li{
+
+.nav__list > li {
     display: inline-block;
     font-size: 10px;
 }
-.nav__list__tab{
+
+.nav__list__tab {
     color: #eee;
     text-decoration: none;
 }
+
 .content,
-.content-aside{
+.content-aside {
     margin: 1% 2%;
     padding: 2%;
     border-radius: 2px;
     box-shadow: 0 1px 2px;
     background-color: #fff;
 }
-.content__title{
+
+.content__title {
     font-size: 24px;
 }
-.content__subtitle{
+
+.content__subtitle {
     font-size: 16px;
     color: #999;
 }
-.content__img{
+
+.content__img {
     display: block;
     width: 50%;
-    height:50%;
+    height: 50%;
 }
-.content__list{
+
+.content__list {
     margin-left: 4%;
 }
-.content__item{
+
+.content__item {
     margin: 2%;
     width: 20%;
     height: 20%;
 }
-.content__item__keyword{
+
+.content__item__keyword {
     margin-top: 0;
     margin-bottom: 1px;
 }
-.content__item__img{
+
+.content__item__img {
     width: 100%;
 }
-.content__author{
+
+.content__author {
     font-size: 12px;
     color: #999;
 }
-.content__table{
+
+.content__table {
     border-collapse: collapse;
     width: 100%;
 }
-.content__table__thead{
+
+.content__table__thead {
     background-color: #333;
     color: #fff;
 }
+
 .thead__td,
 .tbody__td,
-.tfoot__td{
-    border:1px solid #999;
+.tfoot__td {
+    border: 1px solid #999;
     font-size: 12px;
     padding-left: 6px;
 }
-.tfoot__tr{
+
+.tfoot__tr {
     border: 0;
     background-color: #666;
     color: #fff;
 }
-.form__items{
+
+.form__items {
     margin-bottom: 10px;
 }
-.form__item{
+
+.form__item {
     margin-bottom: 2px;
     font-size: 10px;
 }
-.form__item__label{
-    float: left;
-    display: block;
+
+/*good*/
+.form__item__label {
+    display: inline-block;
     width: 30%;
     font-size: 12px;
     text-align: right;
 }
-.form__item__input{
+
+.form__item__input {
     margin-left: 2%;
     font-size: 10px;
 }
-.form__tips{
+
+.form__tips {
     margin: 2px 0 0 32%;
     font-size: 12px;
-    color: #cccccc;
+    color: #ccc;
 }
-.form__button{
+
+.form__button {
     width: 100%;
     height: 30px;
-    border-radius:10px;
+    border-radius: 10px;
     border: 0;
-    background-color:rgb(38, 71, 176);
+    background-color: rgb(38, 71, 176);
     color: #fff;
     font-size: 12px;
 }
-.copyright{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+.copyright {
     font-size: 12px;
     color: #ffffff;
-    line-height: 12px;
+    line-height: 50px;
+    text-align: center;
 }

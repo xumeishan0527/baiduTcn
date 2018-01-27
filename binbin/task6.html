@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task6</title>
+    <style>
+        textarea{
+            width: 200px;
+            height: 100px;
+        }
+        .ulOut{
+            list-style-type: none;
+            /*border: 1px solid green;*/
+            padding: 0;
+        }
+        .liOut{
+            display: inline-block;
+            margin-right: 4px;
+            width: 40px;
+            height:40px;
+            background: red;
+            font: 18px/40px "sans-serif";
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <textarea id=aqi-textarea></textarea>
+    <button id="right-in">侧入</button>
+    <input>
+    <button id="search">查询</button>
+
+    <div id="container">
+
+    </div>
+
+    <script>
+        var rightIn=document.getElementById('right-in'),
+            search=document.getElementById('right-out'),
+            textarea=document.getElementById('aqi-textarea'),
+            data=[];
+
+        function getValue() {
+            var per=textarea.value;
+            console.log(per);
+            return per;
+        }
+
+
+        rightIn.onclick=function () {
+            var aqiValue=getValue();
+            data.push(aqiValue);
+            console.log(data);
+            getNum(data);
+        };
+
+
+        /*渲染每个li*/
+        function getNum() {
+            var container=document.getElementById('container');
+            container.innerHTML='';/*good*/
+            var newUL=document.createElement('ul');
+            newUL.className='ulOut';
+            var newli='';
+            for(var i=0;i<data.length;i++){
+                var newLi__tpl='<li class="liOut" data-index="'+i+'">'+data[i]+'</li>';
+                newli=newli+newLi__tpl;
+            }
+            newUL.innerHTML=newli;
+            container.appendChild(newUL);
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
