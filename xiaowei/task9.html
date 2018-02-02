@@ -7,96 +7,106 @@
     <link rel="stylesheet" href="./less/test1-9.css">
 </head>
 <body>
+    <!--总容器-->
     <div class="container">
+        <!--头部模块-->
         <header>
             <div class="logo">
                 <div class="logo1"></div>
             </div>
-            <div class="search"><input type="text" class="search__input"></div>
-            <div class="login"><img src="./images/task8-login.png" alt="" class="login__logo">登录</div>
+            <div class="search"><input class="search-input"></div>
+            <div class="login"><img src="./images/task8-login.png" alt="" class="login-logo">登录</div>
         </header>
+
+        <!--侧边栏模块-->
         <aside>
-            <div class="aside__personMg">
-                <div class="circle"><div class="circle-center"></div></div>
+            <div class="aside-personMg"><!--头像和昵称-->
+                <div class="circle">
+                    <div class="circle-center"></div>
+                </div>
                 ABC123
             </div>
-            <div class="aside__nub">
-                <div>
+
+            <div class="aside-nub"><!--收藏量和粉丝量-->
+                <span>
                     110<br/>收藏
-                </div>
-                <div>
+                </span>
+                <span>
                     313<br/>粉丝
-                </div>
+                </span>
             </div>
-            <div class="aside__part3">
+
+            <div class="aside-part3"><!--个人报表-->
                 <div class="aside-title">
                     <img src="./images/task9-4.png" alt="个人报表" class="aside-icon">
                     个人报表
 
-                    <div>
-                        <div class="aside-title__items">
-                            <img src="./images/task9-5.png" alt="文件一" class="aside-icon2">
-                            <img src="./images/task9-6.png" alt="文件一" class="aside-icon2">
-                            文件一
+                    <div class="aside-title-items">
+                        <img src="./images/task9-5.png" alt="文件一" class="aside-icon2">
+                        <img src="./images/task9-6.png" alt="文件一" class="aside-icon2">
+                        文件一
+                    </div>
+
+                    <div class="aside-title-items active">
+                        <img src="./images/task9-7.png" alt="文件二" class="aside-icon2">
+                        <img src="./images/task9-10.png" alt="文件二" class="aside-icon2">
+                        文件二
+                        <div class="aside-title-item">
+                            <img src="./images/task9-8.png" alt="文档1" class="aside-icon2">
+                            文档1
                         </div>
-                        <div class="aside-title__items active">
-                            <img src="./images/task9-7.png" alt="文件二" class="aside-icon2">
-                            <img src="./images/task9-10.png" alt="文件二" class="aside-icon2">
-                            文件二
-                            <div>
-                                <div class="aside-title__item">
-                                    <img src="./images/task9-8.png" alt="文档1" class="aside-icon2">
-                                    文档1
-                                </div>
-                                <div class="aside-title__item">
-                                    <img src="./images/task9-9.png" alt="文档2" class="aside-icon2">
-                                    文档2
-                                </div>
-                            </div>
-                        </div>
-                        <div class="aside-title__items">
-                            <img src="./images/task9-5.png" alt="文件三" class="aside-icon1">
-                            <img src="./images/task9-6.png" alt="文件三" class="aside-icon1">
-                            文件三
+                        <div class="aside-title-item">
+                            <img src="./images/task9-9.png" alt="文档2" class="aside-icon2">
+                            文档2
                         </div>
                     </div>
+                    <div class="aside-title-items">
+                        <img src="./images/task9-5.png" alt="文件三" class="aside-icon1">
+                        <img src="./images/task9-6.png" alt="文件三" class="aside-icon1">
+                        文件三
+                    </div>
                 </div>
-                <div class="aside-title">
+
+                <div class="aside-title"><!--个人收藏模块-->
                     <img src="./images/task9-1.png" alt="个人收藏" class="aside-icon">
                     个人收藏
                 </div>
-                <div class="aside-title">
+
+                <div class="aside-title"><!--我的分享模块-->
                     <img src="./images/task9-2.png" alt="我的分享" class="aside-icon">
                     我的分享
                 </div>
-                <div class="aside-title">
+
+                <div class="aside-title"><!--图库模块-->
                     <img src="./images/task9-1.png" alt="图库" class="aside-icon">
                     图库
                 </div>
-                <div class="aside-title">
+
+                <div class="aside-title"><!--成长记录模块-->
                     <img src="./images/task9-1.png" alt="成长记录" class="aside-icon">
                     成长记录
                 </div>
-                <div class="aside-title">
+
+                <div class="aside-title"><!--账户信息模块-->
                     <img src="./images/task9-3.png" alt="账户信息" class="aside-icon">
                     账户信息
                 </div>
-
             </div>
-
         </aside>
 
+        <!--主内容区域-->
         <section>
             <nav>
-                <ul class="nav__list">
-                    <li><a href="#" class="nav__list__link">C站 / </a></li>
-                    <li><a href="#" class="nav__list__link">个人报表 / </a></li>
-                    <li><a href="#" class="nav__list__link">文件一 / </a></li>
-                    <li><a href="#" class="nav__list__link">文档一 </a></li>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-list-link">C站 / </a></li>
+                    <li><a href="#" class="nav-list-link">个人报表 / </a></li>
+                    <li><a href="#" class="nav-list-link">文件一 / </a></li>
+                    <li><a href="#" class="nav-list-link">文档一 </a></li>
                 </ul>
             </nav>
-            <article class="searchMessage">
-                <div class="searchMessage__searchList">
+
+            <article class="searchMessage"><!--搜索模块-->
+                <div class="searchMessage-searchList">
                     <label for="checkout">查询项</label>
                     <select name="checkout" id="checkout">
                         <option value="1">第一项</option>
@@ -104,7 +114,7 @@
                     </select>
                 </div>
 
-                <div class="searchMessage__users">
+                <div class="searchMessage-users">
                     <div>
                         <label for="buyer">买方</label>
                         <select name="buyer" id="buyer">
@@ -119,10 +129,11 @@
                             <option>小D</option>
                         </select>
                     </div>
-                    <p class="searchMessage__users__change">换</p>
+                    <p class="searchMessage-users-change">换</p>
                 </div>
-                <div class="searchMessage__inf">
-                    <div class="searchMessage__inf__date">
+
+                <div class="searchMessage-inf"><!--时间、人数、成交量统计模块-->
+                    <div class="searchMessage-inf-date"><!--时间、人数统计模块-->
                         <span>
                             <label for="date">日期</label>
                             <input value="2016-04-01" name="date" id="date">
@@ -135,7 +146,8 @@
                             </select>
                         </span>
                     </div>
-                    <div class="searchMessage__numPerson">
+
+                    <div class="searchMessage-numPerson"><!--成交量统计模块-->
                         <span>
                             <label for="peopleNum">人数</label>
                             <select id="peopleNum">
@@ -149,67 +161,69 @@
                         </span>
                     </div>
                 </div>
-                <button class="search__btn">搜索</button>
 
+                <button class="search-btn">搜索</button>
             </article>
-            <article class="history">
-                <div class="history__list">
+
+            <article class="history"><!--历史查询模块-->
+                <div class="history-list">
                     <img src="./images/task9-13.png" alt="">
                 </div>
-                <div class="history__list">
-                    <p class="history__list__time">10:00 am</p>
-                    <p class="history__list__money"><span>￥</span>1200</p>
+                <div class="history-list">
+                    <p class="history-list-time">10:00 am</p>
+                    <p class="history-list-money"><span>￥</span>1200</p>
                 </div>
-                <div class="history__list">
-                    <p class="history__list__time">11:00 am</p>
-                    <p class="history__list__money"><span>￥</span>1300</p>
+                <div class="history-list">
+                    <p class="history-list-time">11:00 am</p>
+                    <p class="history-list-money"><span>￥</span>1300</p>
                 </div>
-                <div class="history__list">
-                    <p class="history__list__time">12:00 am</p>
-                    <p class="history__list__money"><span>￥</span>1200</p>
+                <div class="history-list">
+                    <p class="history-list-time">12:00 am</p>
+                    <p class="history-list-money"><span>￥</span>1200</p>
                 </div>
-                <div class="history__list">
-                    <p class="history__list__time">01:00 am</p>
-                    <p class="history__list__money"><span>￥</span>1400</p>
+                <div class="history-list">
+                    <p class="history-list-time">01:00 am</p>
+                    <p class="history-list-money"><span>￥</span>1400</p>
                 </div>
-                <div class="history__list">
-                    <p class="history__list__time">02:00 am</p>
-                    <p class="history__list__money"><span>￥</span>1500</p>
+                <div class="history-list">
+                    <p class="history-list-time">02:00 am</p>
+                    <p class="history-list-money"><span>￥</span>1500</p>
                 </div>
-                <div class="history__list">
-                    <p class="history__list__time">03:00 am</p>
-                    <p class="history__list__money"><span>￥</span>1800</p>
+                <div class="history-list">
+                    <p class="history-list-time">03:00 am</p>
+                    <p class="history-list-money"><span>￥</span>1800</p>
                 </div>
-                <div class="history__list">
+                <div class="history-list">
                     <img src="./images/task9-14.png" alt="">
                 </div>
-                <div class="history__list">历史查询</div>
+                <div class="history-list">历史查询</div>
             </article>
-            <article class="statisticsData">
+
+            <article class="statisticsData"><!--‘2016年4月统计’模块-->
                 2016年4月份统计
-                <div class="statisticsData__items">
-                    <div class="statisticsData__item1">
+                <div class="statisticsData-items">
+                    <div class="statisticsData-item1">
                         <div class="item1">
                             <p>133311</p>
                             <p>成交量</p>
                         </div>
                         <div class="item2"></div>
                     </div>
-                    <div class="statisticsData__item2">
+                    <div class="statisticsData-item2">
                         <div class="item1">
                             <p>133311</p>
                             <p>成交量</p>
                         </div>
                         <div class="item2"></div>
                     </div>
-                    <div class="statisticsData__item3">
+                    <div class="statisticsData-item3">
                         <div class="item1">
                             <p>133311</p>
                             <p>成交量</p>
                         </div>
                         <div class="item2"></div>
                     </div>
-                    <div class="statisticsData__item4">
+                    <div class="statisticsData-item4">
                         <div class="item1">
                             <p>133311</p>
                             <p>成交量</p>
@@ -218,14 +232,15 @@
                     </div>
                 </div>
             </article>
-            <article class="project">
-                <div class="project__left">
-                    <p class="project__left__title">第一组项目</p>
-                    <ul class="project__left__ul">
-                        <li class="project__left__ulLI">
-                            <input type="radio" name="project" checked="checked" class="liInput">
+
+            <article class="project"><!--项目组模块-->
+                <div class="project-left"><!--第一组项目模块-->
+                    <p class="project-left-title">第一组项目</p>
+                    <ul class="project-left-ul">
+                        <li class="project-left-ulLI">
+                            <input type="radio" name="project" checked class="liInput">
                             <span>项目一</span>
-                            <div class="project__left__table">
+                            <div class="project-left-table">
                                 <table cellspacing="0">
                                     <tr>
                                         <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
@@ -249,10 +264,10 @@
                             </div>
                         </li>
 
-                        <li class="project__left__ulLI">
+                        <li class="project-left-ulLI">
                             <input type="radio" name="project" class="liInput">
                             <span>项目二</span>
-                            <div class="project__left__table table2">
+                            <div class="project-left-table table2">
                                 <table cellspacing="0">
                                     <tr>
                                         <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
@@ -275,10 +290,10 @@
                                 </table>
                             </div>
                         </li>
-                        <li class="project__left__ulLI">
+                        <li class="project-left-ulLI">
                             <input type="radio" name="project" class="liInput">
                             <span>项目三</span>
-                            <div class="project__left__table table3">
+                            <div class="project-left-table table3">
                                 <table cellspacing="0">
                                     <tr>
                                         <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
@@ -301,10 +316,10 @@
                                 </table>
                             </div>
                         </li>
-                        <li class="project__left__ulLI">
+                        <li class="project-left-ulLI">
                             <input type="radio" name="project" class="liInput">
                             <span>项目四</span>
-                            <div class="project__left__table table4">
+                            <div class="project-left-table table4">
                                 <table cellspacing="0">
                                     <tr>
                                         <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
@@ -327,10 +342,10 @@
                                 </table>
                             </div>
                         </li>
-                        <li class="project__left__ulLI">
+                        <li class="project-left-ulLI">
                             <input type="radio" name="project" class="liInput">
                             <span>项目五</span>
-                            <div class="project__left__table table5">
+                            <div class="project-left-table table5">
                                 <table cellspacing="0">
                                     <tr>
                                         <td class="tableActive">购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td>
@@ -354,37 +369,39 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
-                <div class="project__right">
-                    <p class="project__left__title">第二组项目</p>
-                    <div class="project__left__titleSub">
+
+                <div class="project-right"><!--第二项目组模块-->
+                    <p class="project-left-title">第二组项目</p>
+                    <div class="project-left-titleSub">
                         <p>标题</p>
                         <p>项目报表三</p>
                     </div>
-                    <div class="project__left__inf">
-                        <div class="project__left__inf__cost">
+
+                    <div class="project-left-inf">
+                        <div class="project-left-inf-cost">
                             <p>价格</p>
                             <p>￥158</p>
                         </div>
-                        <div class="project__left__inf__name">
+                        <div class="project-left-inf-name">
                             <p>负责人</p>
                             <p>小A</p>
                         </div>
                     </div>
-                    <div class="project__left__dec">
+
+                    <div class="project-left-dec">
                         <p>详细描述</p>
                         <p>该项目目前负责人是...</p>
                     </div>
                     <label for="input-checkbox" class="input-checkbox"><input type="checkbox" name="input-checkbox" id="input-checkbox">遵守保密协议</label>
-                    <button class="project__right__btn">搜索</button>
-
+                    <button class="project-right-btn">搜索</button>
                 </div>
             </article>
-            <article class="data-time">
-                <div class="data-time__left">
-                    <p class="project__left__title">日历</p>
-                    <div class="data-time__left__chooseTime">
+
+            <article class="data-time"><!--日历和汽车行业品牌模块-->
+                <div class="data-time-left"><!--日历模块-->
+                    <p class="project-left-title">日历</p>
+                    <div class="data-time-left-chooseTime"><!--时间选择-->
                         <select>
                             <option>2016年</option>
                             <option>2017年</option>
@@ -397,9 +414,10 @@
                             <option>标注日期</option>
                             <option>标注时间</option>
                         </select>
-                        <button class="chooseTime__btn">返回今天</button>
+                        <button class="chooseTime-btn">返回今天</button>
                     </div>
-                    <table class="data-time__left__date">
+
+                    <table class="data-time-left-date"><!--日历表-->
 
                             <tr>
                                 <td>一</td>
@@ -458,9 +476,10 @@
 
                     </table>
                 </div>
-                <div class="data-time__right">
-                    <p class="project__left__title">汽车行业品牌榜</p>
-                    <table class="data-time__right__table">
+
+                <div class="data-time-right"><!--汽车行业品牌模块-->
+                    <p class="project-left-title">汽车行业品牌榜</p>
+                    <table class="data-time-right-table">
                         <tr>
                             <td>排行</td>
                             <td>品牌</td>
